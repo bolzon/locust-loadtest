@@ -7,12 +7,16 @@ class ServerLoadtest(HttpUser):
   def on_start(self):
     self.client.post('/login')
 
-  @task
+  @task(15)
   def home_page(self):
     self.client.get('/')  
 
-  @task(3)
+  @task(80)
   def products_page(self):
     for product_id in range(10):
       self.client.get(f'/products?id={product_id}', name='/products')
       time.sleep(1)
+
+  @task(5)
+  def checkout_page(self):
+    self.client.get('/checkout')

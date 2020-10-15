@@ -10,6 +10,10 @@ const MAX_LOGIN_RESPONSE = 200;
 const MIN_PRODUCTS_RESPONSE = 200;
 const MAX_PRODUCTS_RESPONSE = 800;
 
+// time taken in ms to checkout page send a response
+const MIN_CHECKOUT_RESPONSE = 150;
+const MAX_CHECKOUT_RESPONSE = 450;
+
 ///////////////////////////////////////
 
 const getRandomTime = (min, max) => Math.floor(Math.random() * (max - min) + min);
@@ -28,6 +32,13 @@ app.post('/login', (req, res) => {
 app.get('/products', (req, res) => {
   const responseTime = getRandomTime(MIN_PRODUCTS_RESPONSE, MAX_PRODUCTS_RESPONSE);
   const responseMsg = `It is the products page! Took ${responseTime}ms to send response.`;
+  // res.send(responseMsg);
+  setTimeout(() => res.send(responseMsg), responseTime);
+});
+
+app.get('/checkout', (req, res) => {
+  const responseTime = getRandomTime(MIN_CHECKOUT_RESPONSE, MAX_CHECKOUT_RESPONSE);
+  const responseMsg = `It is the checkout page! Took ${responseTime}ms to send response.`;
   // res.send(responseMsg);
   setTimeout(() => res.send(responseMsg), responseTime);
 });
