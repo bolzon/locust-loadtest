@@ -2,7 +2,18 @@
 
 This repo has content used in a presentation about load testing using [Locust](https://locust.io).
 
-## Subfolders
+## Server
 
-- [**server/**](./server) - server code to be tested using Locust calls.
-- [**loadtest/**](./loadtest) - load test code used with Locust.
+Server app was written in Node.js, so have it installed in your machine and type command below in `server/` folder.
+
+```sh
+$ node server.js
+```
+
+## Load test
+
+Load test was written in Python, so have it as well as Locust installed in your machine and type command below in `loadtest/` folder.
+
+```sh
+$ locust -f loadtest.py
+```
