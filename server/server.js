@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   res.send('It is the home page!');
 });
 
-app.get('/login', (req, res) => {
+app.post('/login', (req, res) => {
   const responseTime = getRandomTime(MIN_LOGIN_RESPONSE, MAX_LOGIN_RESPONSE);
   const responseMsg = `It is the login page! Took ${responseTime}ms to send response.`;
   setTimeout(() => res.send(responseMsg), responseTime);
