@@ -8,9 +8,10 @@ Server is written in Node.js and Locust script in Python.
 
 ## Server
 
-Have [Node.js](https://nodejs.org) (12+) in your machine and type command below in `server/` folder.
+Have [Node.js](https://nodejs.org) (12+) in your machine and type commands below in `server/` folder.
 
 ```sh
+$ npm install
 $ node server.js
 ```
 
