@@ -1,3 +1,4 @@
+import time
 from locust import HttpUser, task, between
 
 class ServerLoadtest(HttpUser):
@@ -13,5 +14,5 @@ class ServerLoadtest(HttpUser):
   @task(3)
   def products_page(self):
     for product_id in range(10):
-      self.client.get(f'/products?id={products_id}', name='/products')
+      self.client.get(f'/products?id={product_id}', name='/products')
       time.sleep(1)
