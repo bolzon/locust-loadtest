@@ -1,6 +1,6 @@
-# Locust Presentation
+# Load Test with Locust
 
-This repo has content used in a presentation about load testing using Locust in SiDi.
+This repo has content used in a presentation about load testing using [Locust](https://locust.io).
 
 ## Subfolders
 
