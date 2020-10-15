@@ -1,0 +1,22 @@
+{
+  "name": "locust-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolzon/locust-presentation.git"
+  },
+  "author": "Alexandre Bolzon <blzn@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolzon/locust-presentation/issues"
+  },
+  "homepage": "https://github.com/bolzon/locust-presentation#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
