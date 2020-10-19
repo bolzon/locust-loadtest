@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bolzon/locust-presentation.git"
+    "url": "git+https://github.com/bolzon/locust-loadtest.git"
   },
   "author": "Alexandre Bolzon <blzn@mail.ru>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bolzon/locust-presentation/issues"
+    "url": "https://github.com/bolzon/locust-loadtest/issues"
   },
-  "homepage": "https://github.com/bolzon/locust-presentation#readme",
+  "homepage": "https://github.com/bolzon/locust-loadtest#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
