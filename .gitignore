@@ -129,4 +129,8 @@ dmypy.json
 .pyre/
 
 # nodejs
-server/node_modules
+*/node_modules
+
+# dotnet
+*/obj
+*/bin
